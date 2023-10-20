@@ -1,0 +1,138 @@
+body {
+    background-color: #F1C4C4;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.content {
+    position: relative;
+    display: block;
+    height: 80vh;
+    width: 90vw;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.top {
+    height: 40%;
+    margin: 0 10%;
+    width: 80%;
+    background-color: #FEF6F6;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.5) 0px 1px 3px -1px;
+}
+
+.allias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+h2,
+p {
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #B6B6C2;
+}
+
+audio {
+    margin: 1rem 0;
+    height: 1.5rem;
+    width: 55%;
+    display: flex;
+    align-items: baseline;
+}
+
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #FEF6F6;
+}
+
+.bottom {
+    height: 60%;
+    width: 100%;
+    background-color: red;
+}
+
+.controls {
+    height: 50%;
+    width: 100%;
+    padding: 0 10%;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.5) 0px 8px 16px -8px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+}
+
+.circle {
+    transform: translate(0, -50%);
+    position: relative;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    animation:rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.buttons{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
